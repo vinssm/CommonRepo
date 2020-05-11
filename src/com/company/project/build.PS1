@@ -4,9 +4,9 @@
 
 #Export the common variables
 param(
-[string]$SOLUTION_FILE,
+[string]$WORKSPACE,
 [string]$PROJECT_FILE,
-[string]$APP_DIR
+#[string]$APP_DIR
 
 
 )
@@ -41,8 +41,8 @@ echo "Starting execution of build script XYZ ... "
 echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 
-echo "executing C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.com' C:\Users\valla\OneDrive\Desktop\NewSampleApplication\WebApplication1.sln -build ... "
-& 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.com' C:\Users\valla\OneDrive\Desktop\NewSampleApplication\WebApplication1.sln -build
+# echo "executing C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.com' C:\Users\valla\OneDrive\Desktop\NewSampleApplication\WebApplication1.sln -build ... "
+& "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe" "${WORKSPACE}\${project_file}" /t:Build
 
 if ( $? )
 {
