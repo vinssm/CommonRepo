@@ -19,11 +19,11 @@ package com.company.project;
 		}
 
 	public def build(String WORKSPACE, String project_file) {
-		echo "####### Startint the Powershell Script for code build"
+		echo "@@@@@@ Startint the Powershell Script for code build @@@@@@"
 		echo "####### ${WORKSPACE} ######################"
 		echo "####### ${project_file} ######################"
-		echo "Starting the poweshell script for building ... "
-		PowerShell(". '.\\C:\\WebApplication1\\build.PS1 arg1 arg2 arg3'")
+		echo "Starting the poweshell script for building ...... "
+		PowerShell(". 'AppDemo\\CommonRepo\\src\\com\\company\\projectbuild.PS1' $WORKSPACE $project_file")
 	}
 	public def executeUnitTests() {
 		echo "Executing the Unit tests. executing script from Common repo ... "
