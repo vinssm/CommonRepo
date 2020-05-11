@@ -5,7 +5,7 @@
 #Export the common variables
 param(
 [string]$WORKSPACE,
-[string]$project_file,
+[string]$project_file
 #[string]$APP_DIR
 
 
