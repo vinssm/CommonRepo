@@ -23,7 +23,7 @@ package com.company.project;
 		echo "####### ${WORKSPACE} ######################"
 		echo "####### ${project_file} ######################"
 		echo "Starting the poweshell script for building ...... "
-		PowerShell(". 'CommonRepo\\src\\com\\company\\project\\build.PS1' $WORKSPACE $project_file")
+		PowerShell(". 'CommonRepo\\src\\com\\company\\project\\build.PS1' '$WORKSPACE $project_file'")
 	}
 	public def executeUnitTests() {
 		echo "Executing the Unit tests. executing script from Common repo ... "
