@@ -6,7 +6,7 @@
 param(
 [string]$WORKSPACE,
 [string]$project_file,
-      [string]$APP_namw
+      [string]$APP_name
 
 
 )
