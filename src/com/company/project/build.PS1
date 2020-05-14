@@ -21,7 +21,7 @@ echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 
 # echo "executing C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.com' C:\Users\valla\OneDrive\Desktop\NewSampleApplication\WebApplication1.sln -build ... "
-& 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe' "${WORKSPACE}\${project_file}" /p:Configuration=Release /p:Platform=x64
+& 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\15.0\Bin\MSBuild.exe' "${WORKSPACE}\${project_file}" /p:Configuration=Release /p:Platform=x64
 
 if ( $? )
 {
