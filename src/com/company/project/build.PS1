@@ -29,7 +29,7 @@ echo "Build script is executed successfully."
 exit 0
 }
 else
-
+{
 echo "Build script is FAILED."
 exit 1
 }
