@@ -21,7 +21,8 @@ echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 
 # echo "executing C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.com' C:\Users\valla\OneDrive\Desktop\NewSampleApplication\WebApplication1.sln -build ... "
-& 'C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe' $WORKSPACE/$project_file COPY --from=publish /app/publish 
+#& 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\15.0\Bin\MSBuild.exe' C:\Program Files (x86)\Jenkins\workspace\AppDemo\NewSampleApplication\WebApplication1\WebApplication1.sln -build ... 
+& 'C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe' $WORKSPACE/$project_file /t:publish
 
 if ( $? )
 {
