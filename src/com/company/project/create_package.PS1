@@ -1,25 +1,21 @@
- # call the build script
+#This script will build the dll from source code
 # export the common variables from app inputs
 
-$scriptpath = $MyInvocation.MyCommand.Path
 
-$dir = Split-Path $scriptpath
-
-cd $dir
-
-cd ..\..\..\..\..\
-
-. ./input.yaml
+#Export the common variables
+param(
+[string]$WORKSPACE,
+[string]$project_file,
+      [string]$APP_name
 
 
-echo -n " "
-echo -n " "
-echo -n " "
-pwd
+)
 
 
 echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-echo "Starting execution of Deploy script  ... "
+echo "Starting execution of build script ...... "
+echo "$WORKSPACE"
+echo "$project_file"
 echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 
