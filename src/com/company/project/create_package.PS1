@@ -35,7 +35,7 @@ exit 1
 }
 
 echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-echo "Execution of deploy script is completed "
+echo "Execution of Package Script is Completed "
 echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 
