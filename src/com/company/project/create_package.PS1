@@ -30,6 +30,8 @@ $destination = "C:\Program Files (x86)\Jenkins\workspace\dotnet\WebApp1\WebApp1\
 $output_path = "$destination"
 $check_path = Test-path "$output_path"
 
+echo "XXXXXXXXXXXXXXXXXXXX $output_path XXXXXXXXXXXXXXXXXXXXXXXXXX"
+
 if ( $? )
 {
 echo "Package script is executed successfully."
