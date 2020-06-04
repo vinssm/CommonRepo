@@ -43,6 +43,7 @@ package com.company.project;
 		echo "========= Starting the poweshell script for creating package ......... "
 		echo "####### ${WORKSPACE} ######################"
 		echo "####### ${project_file} ######################"
+		echo "####### ${published_path} ######################"
 		PowerShell(". 'CommonRepo\\src\\com\\company\\project\\create_package.PS1' '$WORKSPACE $project_file $published_path'")
 		}
 		public def web_deploy() {
