@@ -25,7 +25,7 @@ echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 if ( $? )
 {
-echo "Deploy script is executed successfully."
+echo "Package script is executed successfully."
 exit 0
 }
 else
