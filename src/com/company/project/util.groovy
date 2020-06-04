@@ -39,11 +39,11 @@ package com.company.project;
 		PowerShell(". 'CommonRepo\\src\\com\\company\\project\\build.PS1'")
 		}
 
-	public def create_package(String WORKSPACE, String project_file) {
+	public def create_package(String WORKSPACE, String project_file, String published_path) {
 		echo "========= Starting the poweshell script for creating package ......... "
 		echo "####### ${WORKSPACE} ######################"
 		echo "####### ${project_file} ######################"
-		PowerShell(". 'CommonRepo\\src\\com\\company\\project\\create_package.PS1' '$WORKSPACE $project_file'")
+		PowerShell(". 'CommonRepo\\src\\com\\company\\project\\create_package.PS1' '$WORKSPACE $project_file $published_path'")
 		}
 		public def web_deploy() {
 			echo "Starting the poweshell script for extracting packages into web deploy directory ... "
