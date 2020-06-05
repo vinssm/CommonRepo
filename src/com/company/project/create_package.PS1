@@ -1,4 +1,4 @@
-#This script will build the dll from source code
+#This script will Publish dll's from source code
 # export the common variables from app inputs
 
 
@@ -14,7 +14,7 @@ param(
 
 
 echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-echo "Starting execution of build script ...... "
+echo "Starting Publishing from Package script ...... "
 echo "$WORKSPACE"
 echo "$project_file"
 echo "$published_path"
@@ -44,7 +44,7 @@ exit 1
 }
 
 echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-echo "Execution of Package Script is Completed "
+echo "Execution of Publish Script is Completed "
 echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 
