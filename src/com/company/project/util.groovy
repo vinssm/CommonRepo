@@ -46,6 +46,7 @@ package com.company.project;
 		echo "####### ${published_path} ######################"
 		PowerShell(". 'CommonRepo\\src\\com\\company\\project\\create_package.PS1' '$WORKSPACE $project_file $published_path'")
 		}
+		
 		public def web_deploy() {
 			echo "Starting the poweshell script for extracting packages into web deploy directory ... "
 			PowerShell(". 'CommonRepo\\src\\com\\company\\project\\web_deploy.PS1'")
