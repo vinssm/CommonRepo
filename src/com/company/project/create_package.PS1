@@ -25,12 +25,11 @@ echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 #& 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe' C:\Users\valla\OneDrive\Desktop\NewSampleApplication\WebApplication1.sln /p:Configuration=Release  /t:Package
 & 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe' $WORKSPACE/$project_file /p:Configuration=Release  /t:publish 
 
-$destination = "C:\Program Files (x86)\Jenkins\workspace\dotnet\WebApp1\WebApp1\obj"
+$destination = "\\VS01\Server"
 
 $output_path = "$destination"
 $check_path = Test-path "$output_path"
 
-$destination = "\\VS01\Server"
 
 echo "XXXXXXXXXXXXXXXXXXXX $output_path XXXXXXXXXXXXXXXXXXXXXXXXXX"
 
