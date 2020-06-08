@@ -37,7 +37,7 @@ if ( $? )
 {
 echo "Package script is executed successfully."
 exit 0
-}
+}   
 else
 {
 echo "Deploy script is FAILED."
