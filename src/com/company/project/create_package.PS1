@@ -7,6 +7,7 @@ param(
 [string]$WORKSPACE,
 [string]$project_file,
 [string]$published_path,
+[string]$DLL_path,
       [string]$APP_name
 
 
@@ -18,6 +19,7 @@ echo "Starting Publishing from Package script ...... "
 echo "$WORKSPACE"
 echo "$project_file"
 echo "$published_path"
+echo "DLL_path"
 echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 
